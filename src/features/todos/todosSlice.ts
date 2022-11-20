@@ -6,6 +6,7 @@ type TodoId = string;
 type Todo = {
   id: TodoId;
   title: string;
+  created: string;
   completed: boolean;
 };
 

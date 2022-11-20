@@ -14,7 +14,7 @@ export const TodoList = () => {
       {todos.map((todo) => (
         <li key={todo.id} className="list-group-item">
           <div className="row">
-            <div className="col-sm-8">
+            <div className="col-sm-5">
               <input
                 id={`list-item-${todo.id}`}
                 className="form-check-input"
@@ -31,6 +31,7 @@ export const TodoList = () => {
                 {todo.title}
               </label>
             </div>
+            <div className="col-sm-3">{todo.created}</div>
             <div className="col">
               <div className="row">
                 <div className="col px-0">
